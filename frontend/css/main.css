@@ -1,0 +1,74 @@
+/*********   Cabecera   *********/
+.header {
+  background: #34639c;
+}
+.header .header__logo {
+  margin-left: 0.5em;
+}
+/*********   Pie   ************/
+.footer {
+  background: #34639c !important;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+/********* Pages  ***********/
+.titulo {
+  color: #34639c;
+  border-bottom: 2px solid #2289d9;
+  padding-bottom: 3px;
+/******** Login ************/
+}
+.slider {
+  box-shadow: 1.5px 1.5px 1.5px 1.5px #c9c9c9;
+  position: relative;
+  left: 20px;
+  margin-top: 10px;
+  margin-left: 3px;
+}
+.whiteframe {
+  background: #fff;
+  box-shadow: 1.5px 1.5px 1.5px 1.5px #c9c9c9;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  right: 20px;
+  top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.whiteframe .btn_bl {
+  color: #2289d9;
+  margin-top: 5px;
+}
+.whiteframe .btn_bl:hover {
+  color: #94c9ef;
+  text-decoration: underline;
+}
+.card-position {
+  position: relative;
+  right: 20px;
+  top: 10px;
+  width: 95%;
+}
+.card-position .card-dark {
+  background: #2e2e2e;
+}
+.cont {
+  background: #00abff;
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.bloque {
+  background: #1c9888;
+  margin-bottom: -2.5%;
+}
+.caption-color {
+  color: #2289d9 !important;
+}
