@@ -33,6 +33,7 @@ main {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 15px !important;
+  padding-bottom: 20px !important;
   position: relative;
   top: 10px;
   z-index: 2;
@@ -123,4 +124,7 @@ main {
 .btn-prod {
   background: #2289d9 !important;
   width: 130px;
+}
+.ped-img {
+  float: left;
 }

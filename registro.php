@@ -89,7 +89,7 @@
 			<div class="bloque bloque-reg row"></div>
 		</main>
 		
-		<?php include("../base/footer.php") ?>
+		<?php include("footer.php") ?>
 		<!--Dependencias-->
      <script type="text/javascript" src="lib/jquery-2.1.3.js"></script>
      <script type="text/javascript" src="lib/materialize/js/materialize.js"></script>

@@ -14,7 +14,7 @@ include("conexion.php");
 	          </tr>
 	        </thead>";
 	while($filas=mysqli_fetch_array($consulta)){
-		echo utf8_encode("
+		echo utf8_decode("
 		<form action='pedidos.php' method='POST'>
 			<tr>
 				<td name='id'>".$filas['producto_id']."</td>

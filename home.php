@@ -13,21 +13,17 @@
 </head>
 <body>
 	<? include("header.php") ?>
-	<? include("backend/login.php") ?>
+	<? include("backend/sesion.php") ?>
 	<main>
 		<section class="container">
 			<h2 align="center" class="titulo">Bienvenido a la Tienda</h2>
-			<h5>Usuario: <? echo $_SESSION['login_user']  ?></h5><br>
+			<h5>Bienvenido <? echo $_SESSION['login_user']  ?></h5><br>
 		</section>
 		<section class="row container">
-			<div class="waves-effect waves-light col s5 offset-s1 icon-block icon__box ">
+			<a href="backend/pedidoshome.php"><div class="waves-effect waves-light col s5 offset-s1 icon-block icon__box ">
             	<h2 class="center white-text"><i class="mdi-editor-format-list-bulleted icon-size"></i></h2>
             	<h5 class="center white-text">Ver mis pedidos</h5>	
-          	</div>
-			<div class="waves-effect waves-light col s5 offset-s1 icon-block icon__box">
-            	<h2 class="center white-text"><i class="mdi-action-shopping-cart icon-size"></i></h2>
-            	<h5 class="center white-text">Confirmar Compra</h5>	
-          	</div>
+          	</div></a>
 		</section>
 	</main>
 

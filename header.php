@@ -7,7 +7,6 @@
     </head>
 </head>
 <body>
-<?include ("backend/login.php") ?>
 <header id="header">
 	<nav class="header">
 	    <div class="nav-wrapper">
@@ -16,17 +15,14 @@
 		    </a>
 		    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 		    <ul class="right hide-on-med-and-down">
-				<? echo $boton ?>
+				<li><a href="home.php">Inicio</a></li>
 		        <li><a href="productos.php">Productos</a></li>
 		        <li><a href="int.php">INT</a></li>
-		        <li><a href="registro.php">Registrarse</a></li>
 		      </ul>
 		    <ul class="side-nav" id="mobile-demo">
-		    	<? echo $boton ?>
 		    	<li><a href="home.php">Inicio</a></li>
 		       	<li><a href="productos.php">Productos</a></li>
 		       	<li><a href="int.php">INT</a></li>
-		       	<li><a href="registro.php">Registrarse</a></li> 
 		    </ul>
 	    </div>
     </nav>

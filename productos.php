@@ -13,6 +13,7 @@
 </head>
 	<body>
 		<? include("header.php") ?>
+		<? include("backend/sesion.php") ?>
 		
 		<main>
 			<section class="container">
@@ -26,7 +27,6 @@
 		<!--Dependencias-->
      <script type="text/javascript" src="lib/jquery-2.1.3.js"></script>
      <script type="text/javascript" src="lib/materialize/js/materialize.js"></script>
-     <script type="text/javascript" src="lib/handlebars-v3.0.1.js"></script>
 
 	</body>
 </html>

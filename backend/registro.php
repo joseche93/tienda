@@ -15,13 +15,13 @@ $direccion = $_POST['direccion'];
 $result=mysqli_query($conexion, "insert into usuarios (email, clave, nombre, apellido, telefono, pais, estado, ciudad, direccion) values ( '$email', '$clave', '$nombre', '$apellido', '$telefono', '$pais', '$estado', '$ciudad', '$direccion') ");
 $rows = mysqli_fetch_array($result);
 
-	if ($rows['email']==1) {
+	if ($rows['email']>0) {
 		echo "<script>alert('Este correo ya ha sido registrado'); window.location = '../index.php';</script>";	
 		
 	}
 
 mysqli_close($conexion);
 
-	echo "<script>alert('Se ha registrado exitosamente!'); window.location = '../frontend/pages/productos.php';</script>";
-	header("location: ../frontend/pages/productos.php");
+	echo "<script>alert('Se ha registrado exitosamente!'); window.location = '../index.php';</script>";
+	
 ?>
