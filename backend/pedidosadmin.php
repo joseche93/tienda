@@ -2,7 +2,7 @@
 
 include('../lib/fpdf/fpdf.php');
 include("conexion.php");
-
+session_start();
 class PDF extends FPDF {
 
     // Cabecera de página
@@ -36,7 +36,7 @@ $pdf->AddPage();
 $pdf->SetFont('Arial', '', 12);
 
 $pdf->Cell(70);
-$pdf->Cell(200, 6, 'Pedidos', 0, 1, 'J');
+$pdf->Cell(200, 6, 'Ver Todos los Pedidos', 0, 1, 'J');
 $pdf->Cell(200, 6, '', 0, 1, 'J');
 
 $inst = mysqli_query($conexion, 'select p.pedido_id as pid, p.fecha as fe,p.comentario as pc, u.nombre as un, pr.nombre as pn from pedidos as p join usuarios as u on u.user_id= p.user_id join productos as pr on p.producto_id= pr.producto_id

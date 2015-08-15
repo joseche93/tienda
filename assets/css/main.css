@@ -108,6 +108,7 @@ main {
 .icon__box {
   background: #1c9888;
   box-shadow: 1px 1px 2px 1px #c9c9c9;
+  border: 0 !important;
 }
 .icon__box:hover {
   background: #1fae9f;

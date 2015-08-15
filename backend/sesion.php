@@ -1,31 +1,26 @@
 <?php
-	
-
-include('../backEnd/conexion.php');
-
+include('conexion.php');
 session_start();
 
 $verificar_usuario = $_SESSION['login_user'];
-$result = mysqli_query($conexion, "select * from usuarios where email = " . $_SESSION['login_user']);
+$result = mysqli_query($conexion, "select * from usuarios where email = '" . $_SESSION['login_user']."' ");
 $row = mysqli_fetch_array($result);
 $login_session = $row['email'];
 
-if (!isset($login_session)) {
+if ($_SESSION['login_user']==" ") {
     mysqli_close($conexion);
-    header('Location: index.php');
+    echo "<script>window.location = 'index.php';alert('Debe acceder a su cuenta para poder ver este contenido');</script>";
 }
 mysqli_close($conexion);
 
-include('backend/conexion.php');
-
-$usuario_id;
-$nombre;
+include('conexion.php');
 
 $result = mysqli_query($conexion, "select * from usuarios where email = '$login_session'");
 while ($row = mysqli_fetch_array($result)) {
-    $usuario_id = $row['usuario_id'];
-    $nombre = $row['nombre'];
+    $user_id = $row['user_id'];
+    $email = $row['email'];
 }
+/*
 $inactivo = 900;
  
     if(isset($_SESSION['tiempo']) ) {
@@ -37,6 +32,6 @@ $inactivo = 900;
         }
     }
  
-    $_SESSION['tiempo'] = time();
+    $_SESSION['tiempo'] = time(); */
 mysqli_close($conexion);
  ?>

@@ -3,7 +3,6 @@
 include('../lib/fpdf/fpdf.php');
 include("conexion.php");
 session_start();
-
 class PDF extends FPDF {
 
     // Cabecera de página
@@ -26,7 +25,7 @@ class PDF extends FPDF {
         // Arial italic 8
         $this->SetFont('Arial', 'I', 8);
         // Número de págin
-        $this->Cell(0, 6, "Pedidos", 0, 0, "C");
+        $this->Cell(0, 6, "Clientes", 0, 0, "C");
     }
 
 }
@@ -37,16 +36,15 @@ $pdf->AddPage();
 $pdf->SetFont('Arial', '', 12);
 
 $pdf->Cell(70);
-$pdf->Cell(200, 6, 'Pedidos de '.$_SESSION['login_user'].'', 0, 1, 'J');
+$pdf->Cell(200, 6, 'Ver Todos los Clientes', 0, 1, 'J');
 $pdf->Cell(200, 6, '', 0, 1, 'J');
 
-$inst = mysqli_query($conexion, 'select p.pedido_id as pid, p.fecha as fe,p.comentario as pc, pr.precio as pre, pr.nombre as pn from pedidos as p join usuarios as u on u.user_id= p.user_id join productos as pr on p.producto_id= pr.producto_id
-    where u.email="'.$_SESSION['login_user'].'"');
+$inst = mysqli_query($conexion, 'select * from usuarios where perfil="cliente"');
 
-$pdf->Cell(200, 6, 'Id del Pedido' . " - " . 'Fecha y hora' . " - " . 'Comentario' . " - " . 'Costo'. " - " . 'Producto', 1, 1, 'J');
+ $pdf->Cell(200, 6, 'Id del Usuario' . " - " . 'Email' . " - " . 'Nombre' . " - " . 'Apellido'. " - " . utf8_decode('Teléfono'). " - " . utf8_decode('País'). " - " . 'Estado'. " - " . 'Ciudad'. " - " . utf8_decode('Dirección'), 1, 1, 'J');
 
 while ($rs = mysqli_fetch_array($inst)) {
-    $pdf->Cell(200, 6, $rs['pid'] . " - " . $rs['fe'] . " - " . $rs['pc'] . " - " . $rs['pre'] . " - " . $rs['pn'], 1, 1, 'J');
+    $pdf->Cell(200, 6, $rs['user_id'] . " - " . $rs['email'] . " - " . $rs['nombre'] . " - " . $rs['apellido'] . " - " . $rs['telefono']. " - " . $rs['pais']. " - " . $rs['estado']. " - " . $rs['ciudad']. " - " . $rs['direccion'], 1, 1, 'J');
 }
 
 $pdf->Output();

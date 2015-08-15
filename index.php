@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>4life entregas a Mexico y Venezuela</title>
+	<title>4life entregas a Mexico</title>
 	<!--Import materialize.css-->
       <link rel="stylesheet" href="assets/css/main.css">
       <link type="text/css" rel="stylesheet" href="lib/materialize/css/materialize.css"  media="screen,projection"/>
@@ -121,7 +121,7 @@
 			          	<div class="icon-block">
 			            	<h2 class="center blue-text text-lighten-3"><i class="mdi-maps-restaurant-menu"></i></h2>
 			            	<h5 class="center">Respaldo al Sistema Digestivo</h5>
-			            	<p align="justify" class="light">Contamos con prooductos especializados en el apoyo al sistema digestivo.
+			            	<p align="justify" class="light">Contamos con productos especializados en el apoyo al sistema digestivo.
 								Vitaminas, antioxidantes, minerales, y distintos suplementos enfocados en solucionar diferentes
 								problemas gastrointestinales y que pueden ser causa de varios malestares.
 			            	</p>

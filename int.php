@@ -12,7 +12,28 @@
 </head>
 </head>
 	<body>
-		<?php include("header.php") ?>
+		<header id="header">
+			<nav class="header">
+			    <div class="nav-wrapper">
+				    <a href="#!" class="brand-logo header__logo">
+				    	4Life
+				    </a>
+				    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+				    <ul class="right hide-on-med-and-down">
+						<li><a href="index.php">Inicio</a></li>
+				        <li><a href="productos.php">Productos</a></li>
+				        <li><a href="int.php">INT</a></li>
+				        <li><a href="registro.php">Registrarse</a></li>
+				      </ul>
+				    <ul class="side-nav" id="mobile-demo">
+				    	<li><a href="home.php">Inicio</a></li>
+				       	<li><a href="productos.php">Productos</a></li>
+				       	<li><a href="int.php">INT</a></li>
+				       	<li><a href="registro.php">Registrarse</a></li> 
+				    </ul>
+			    </div>
+		    </nav>
+		</header>
 		<main>
 			<section class="container">
 					<h2 align="center" class="titulo">International Networker Team</h2>
@@ -66,7 +87,6 @@
 		<!--Dependencias-->
      <script type="text/javascript" src="lib/jquery-2.1.3.js"></script>
      <script type="text/javascript" src="lib/materialize/js/materialize.js"></script>
-     <script type="text/javascript" src="lib/handlebars-v3.0.1.js"></script>
     
      <!--Mis scripts-->
    

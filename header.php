@@ -18,11 +18,13 @@
 				<li><a href="home.php">Inicio</a></li>
 		        <li><a href="productos.php">Productos</a></li>
 		        <li><a href="int.php">INT</a></li>
+		        <li><a href="backend/salir.php">Salir</a></li>
 		      </ul>
 		    <ul class="side-nav" id="mobile-demo">
 		    	<li><a href="home.php">Inicio</a></li>
 		       	<li><a href="productos.php">Productos</a></li>
 		       	<li><a href="int.php">INT</a></li>
+		       	<li><a href="backend/salir.php"></a>Salir</li>
 		    </ul>
 	    </div>
     </nav>

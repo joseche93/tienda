@@ -1,3 +1,4 @@
+<? include("backend/sesion.php") ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,6 @@
 </head>
 	<body>
 		<? include("header.php") ?>
-		<? include("backend/sesion.php") ?>
 		
 		<main>
 			<section class="container">

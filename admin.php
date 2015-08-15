@@ -1,3 +1,4 @@
+<?php include("backend/sesion.php") ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,14 +25,18 @@
 			    </div>
 		    </nav>
 		</header>
-		<main class="container row">
+		<main class="row container">
 			<section class="container">
-						<h2 align="center" class="titulo">Administrador</h2>
-			</section>
-			<section class="row container col s9 offset-s3">
+			<h5>Bienvenido Administrador <? echo $_SESSION['login_user']  ?></h5><br>
+		</section>
+			<section class="row">
 			<a href="backend/pedidosadmin.php"><div class="waves-effect waves-light col s5 offset-s1 icon-block icon__box ">
             	<h2 class="center white-text"><i class="mdi-editor-format-list-bulleted icon-size"></i></h2>
             	<h5 class="center white-text">Ver todos los pedidos</h5>	
+          	</div></a>
+          	<a href="backend/usuariosadmin.php"><div class="waves-effect waves-light col s5 offset-s1 icon-block icon__box ">
+            	<h2 class="center white-text"><i class="mdi-image-timer-auto icon-size"></i></h2>
+            	<h5 class="center white-text">Ver todos los Clientes</h5>	
           	</div></a>
 		</section>
 
