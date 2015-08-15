@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>4life entregas a Mexico y Venezuela</title>
+	<title>4life entregas a Mexico</title>
 	<!--Import materialize.css-->
       <link rel="stylesheet" href="assets/css/main.css">
       <link type="text/css" rel="stylesheet" href="lib/materialize/css/materialize.css"  media="screen,projection"/>
